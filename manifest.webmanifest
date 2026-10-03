@@ -1,0 +1,28 @@
+{
+ "name": "Esmâ-ül Hüsnâ Çalışma Rehberi",
+ "short_name": "Esmâ-ül Hüsnâ",
+ "lang": "tr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f5f6f2",
+ "theme_color": "#1f5a4e",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
