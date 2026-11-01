@@ -4055,6 +4055,6 @@ window.addEventListener("error",function(ev){try{var d=document.getElementById("
 })();
 </script>
 
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+<script>if('serviceWorker' in navigator){var swEski=!!navigator.serviceWorker.controller,swYen=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(swEski&&!swYen){swYen=true;location.reload()}});window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(function(rg){rg.update();document.addEventListener('visibilitychange',function(){if(!document.hidden)rg.update()})}).catch(function(){});});}</script>
 </body>
 </html>
